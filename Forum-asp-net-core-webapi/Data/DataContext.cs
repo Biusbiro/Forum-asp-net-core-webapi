@@ -10,9 +10,9 @@ namespace Forum_asp_net_core_webapi.Data
         }
 
         public DbSet<Cathegory> Cathegories { get; set; }
-        public DbSet<Cathegory> Subcathegories { get; set; }
-        public DbSet<Cathegory> Topic { get; set; }
-        public DbSet<Cathegory> Post { get; set; }
-        public DbSet<Cathegory> User { get; set; }
+        public DbSet<Subcathegory> Subcathegories { get; set; }
+        public DbSet<Topic> Topics { get; set; }
+        public DbSet<Post> Posts { get; set; }
+        public DbSet<User> User { get; set; }
     }
 }

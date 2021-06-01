@@ -27,7 +27,6 @@ namespace Forum_asp_net_core_webapi
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<DataContext>(opt => opt.UseSqlServer(Configuration.GetConnectionString("WebApiForum")));
-            services.AddDbContext<DataContext>(opt => opt.UseSqlServer(Configuration.GetConnectionString("WebApiForumBackup")));
             services.AddControllers();
         }
 
